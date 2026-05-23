@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pride and Prejudice | Gentle Elegance</title>
+  <style>
+    :root {
+      --sand: #e8d4bc;
+      --sand-deep: #d9b99b;
+      --sage: #8f7a67;
+      --ink: #3f2f28;
+      --paper: #fdf8f1;
+      --rose: #b27c74;
+      --shadow: 0 18px 45px rgba(63, 47, 40, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(233, 209, 180, 0.7), transparent 28%),
+        linear-gradient(180deg, #f8efe4 0%, #f3e2d1 100%);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+      padding: 40px 0 26px;
+    }
+
+    .hero-copy {
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(253, 248, 241, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--rose);
+      font-size: 0.82rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 4vw, 2.8rem);
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      font-size: 1.06rem;
+      margin-bottom: 20px;
+      color: #5f4c42;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--rose);
+      color: #fffaf5;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid rgba(63, 47, 40, 0.2);
+    }
+
+    .hero-card {
+      min-height: 380px;
+      border-radius: 28px;
+      padding: 28px;
+      background: linear-gradient(180deg, rgba(216, 182, 156, 0.92), rgba(180, 138, 111, 0.92));
+      box-shadow: var(--shadow);
+      color: #fffdf8;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .hero-card h2 {
+      margin: 0 0 10px;
+      font-size: 1.6rem;
+    }
+
+    .quote {
+      font-size: 1.1rem;
+      font-style: italic;
+      margin: 0;
+      opacity: 0.96;
+    }
+
+    .section {
+      margin-top: 24px;
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(253, 248, 241, 0.88);
+      box-shadow: var(--shadow);
+    }
+
+    .section h3 {
+      font-size: 1.35rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255, 250, 242, 0.95), rgba(232, 212, 188, 0.95));
+      border: 1px solid rgba(63, 47, 40, 0.08);
+    }
+
+    .card h4 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+
+    .note {
+      margin: 12px 0 0;
+      color: #5f4c42;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 28px 0 14px;
+      color: #6a5446;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        min-height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A gentle welcome</p>
+        <h1>Step into Pride and Prejudice.</h1>
+        <p class="subtitle">
+          This is a simple plain HTML and CSS website I made.
+          This was made just for my English class final.
+        </p>
+        <div class="cta-row">
+          <a href="#discover" class="btn btn-primary">Discover more</a>
+          <a href="#details" class="btn btn-secondary">Read the details</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <p class="eyebrow">Featured quote</p>
+        <h2>“I could easily forgive his pride, if he had not mortified mine.” Page 23</h2>
+        <p class="quote">
+          A quick, refined introduction about the popular English novel Pride and Prejudice.
+        </p>
+      </aside>
+    </section>
+
+    <section id="discover" class="section">
+      <h3>First Impressions</h3>
+      <p>
+        Many of the characters in <em>Pride and Prejudice</em> make quick judgments about each others just based on appearances and social status. We can see that people tend to form opinions about others just like what we can see in the novel.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h4>Elizabeth Bennet</h4>
+          <p class="note">At the beginning of the novel, Elizabeth creates a quick judgment about Mr. Darcy. She belives that he is rude and arogant becuase he would not dance with her at the ball.</p>
+        </article>
+        <article class="card">
+          <h4>Mr. Darcy</h4>
+          <p class="note">Mr Darcy at the time saw Elizabeth as someone who was beneath him and not very attractive. His pride makes him to be very judgmental.</p>
+        </article>
+        <article class="card">
+          <h4>George Wickham</h4>
+          <p class="note">Wickham first appears charming to Elizabeth, but he later changes as he tells her lies and stories about Darcy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Literary Project</h3>
+      <p>
+        We can see that <bold>Jane Austen</bold> really put's a lot of details in the novel to show us how people can really be.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h4>Character Development</h4>
+          <p class="note">
+            We can see that the characters in the novel are not just straight forward, but they have some sort of emotional complexity. 
+            For example, Elizabeth is not just a character we quickly learn about, but she is one that has a lot of depth and growth throughout the novel.
+          </p>
+        </article>
+        <article class="card">
+          <h4>Theme</h4>
+          <p class="note">
+            The theme of the novel is about first impressions and is carried throughout the story.
+            We can see that people often make quick judgments but often times, these judgments are often proven wrong as the story unfolds.
+          </p>
+        </article>
+        <article class="card">
+          <h4>Conflict and Author's Message</h4>
+          <p class="note">
+            The conflict of the novel is about how the characters deal with their first impressions and how they grow to understand each other.
+            Jane Austen hides internal conflicts within the characters, showing how emotions and misunderstanding can lead to conflict. 
+            I think that Austen also is trying to warn us about how we need to think twice before we are quick to judge like the characters Austen wrote about.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Created for my English class.</p>
+    </footer>
+  </main>
+</body>
+</html>
